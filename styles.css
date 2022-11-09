@@ -2,10 +2,17 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: arial;
+	font-family: Arial;
+	color: hotpink;
 }
 
-
+title {
+	font-family: Arial; 
+	font-size:30pt; 
+	color: hotpink; 
+	font-style:italic; 
+	text-align:center
+}
 .center {
   display: block;
   margin-left: auto;
@@ -17,18 +24,31 @@
 {   
 	display: flex;
 	justify-content: center;
-	
 }
- img
+
+img 
 {
 	border:  2px solid pink;
-   margin: 5px 10px;
+    margin: 5px 10px;
 	padding: 20px 20px 20px;
-	border-radius: 40px 20px;
-	justify-content: center;
-   align-items: center;
+	border-radius: 40px 20px
+	
+}
+ .Home img
+{
+	float: left;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
+    border:  2px solid pink;
+    margin: 5px 10px;
+	padding: 20px 20px 20px;
+	border-radius: 40px 20px
+	
+  
 		
 }
+ 
 
 #Text
 {
@@ -70,7 +90,7 @@ p
 }
 #menu > a{
 	flex-direction: row;
-	test-align: center;
+	text-align: center;
 	padding: 10px;
 	color: hotpink;
 
@@ -80,7 +100,7 @@ p
 button {
 	width: 200px;
 	height: 50px;
-	margin: 40 40px;
+	margin: 0 0;
 	padding: 20px 20px 20px;
 	background-color: lightpink;
 	border-radius: 8px;
@@ -90,6 +110,7 @@ button {
 	color: hotpink;
 	font-size: 15px;
 	font-family: Arial;
+    
 }
 
 form div {
@@ -185,7 +206,7 @@ form{
 
 .container.contactInfo.box.text
 {
-	dislplay: flex;
+	display: flex;
 	margin-left:  20px;
 	font-size: 16px;
 	flex-direction: column;
@@ -226,7 +247,7 @@ form{
 
 .contactForm .inputBox input:focus ~ span
 {  color: pink;
-	transform: translate(-20);
+	transform: translate(-20px);
 	font-size: 12px;
 }
 
@@ -254,9 +275,10 @@ form{
 .button-box {
 	display: flex;
 	width: 220px;
+	height: 70px;
 	margin: 30px auto;
 	position: relative;
-    border-radius: 40px;
+    border-radius: 30px;
 	box-shadow: 0 0 20px 9px #FFB6C1;
 	display: flex;
 	justify-content: center;
@@ -264,12 +286,16 @@ form{
 }
 
 .toggle-btn{
-	padding:  10 px 30px;
+	padding:  20px 10px;
+	margin: 10px auto;
 	cursor:  pointer;
 	background:  transparent;
 	border: 0;
 	outline: none;
 	position:  relative;
+    display: flex;
+	justify-content: center;
+
 	
 
 }
@@ -292,6 +318,7 @@ form{
 	width: 280px;
 	transition: .5s;
 	right: 240px;
+
 }
 .input-field{
 	width: 100%;
@@ -307,14 +334,14 @@ form{
 
 .submit-btn{
 	width:  85%;
-	padding: pointer;
 	display: block;
 	margin: auto;
-	background: linear-gradient(to right, #FF69B4)
-	border: 0;
+	background: linear-gradient(to right, #FFB6C1, #FF69B4);
+    border: 0;
 	outline:  none;
 	border-radius: 30px;
 }
+
 .check-box{
 	margin: 30px 10px 30px 0;
 }
@@ -331,6 +358,71 @@ span{
 
 #Register {
 	left: 450px;
+
+}
+#password{
+	width: 100%;
+	height: 40px;
+	padding: 0 20px;
+	border: 1px solid #ccc;
+	outline: none;
+	background: transparent;
+}
+#message{
+	position: absolute;
+	bottom: 130px;
+	font-size: 15px;
+
+}
+
+.Home{
+	position: relative;
+	width: 100%;
+	height:300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+	margin-top: 8%;
+	background-color: lightpink;
+	justify-content: center;
+	align-items: center;
+}
+.Home.Description{
+	width: 300px;
+	position: relative;
+	height: 400px;
+	background: #f0f0f0;
+	margin: 20px 15px;
+	padding:  20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow:  0.5px 10px #e6e6e6;
+	transition:  0.3s ease-in-out;
+	margin-top: 5%;
+	
+}
+.Home.Description.img1{
+	position:  relative;
+	width: 300px;
+	height:  300px;
+	top: -60px;
+	left: 20px;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+
+.Home .Description.img1 img{
+	max-width: 100%;
+	border-radius:  20px;
+	object-fit: cover;
+	
+}
+.img1:hover img{
+	transform: scale(1.1);
 }
 
 
