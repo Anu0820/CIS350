@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <title>Anujin's Cleaning Services</title>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id= "Logo">
+    <div><img src="Logo.jpg" alt ="logo" width="100" height="100"> </div>
+    <div><h1 style="font-family: Arial; font-size:30pt; color: hotpink; font-style:italic; text-align:center;">Anujin's Cleaning Services</h1></div>
+    </div>
+
+    <div id="menu">
+        <a href="http://anuscleaningservices.com/index.html">Home</a> &nbsp;
+        <a href="http://anuscleaningservices.com/ourservices.html">Ourservices</a> &nbsp;
+        <a href="http://anuscleaningservices.com/contact.html">Contact</a> &nbsp;
+        <a href="http://anuscleaningservices.com/login.html">Login</a> &nbsp;
+        <a href="http://anuscleaningservices.com/employees.html">Join Our Team</a>&nbsp;
+        <a href="http://anuscleaningservices.com/quote.html"></a><button type="button">&nbsp;
+        <strong>Get a Quote</strong>
+        </button>
+    </div>
+
+    <div class="Log">
+        <div class="form1">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+            </div> 
+        
+        <form id="login" class = "input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id ="Register" class = "input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Email Address" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+    </div>
+        </div>
+        <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("Register");
+        var z = document.getElementById("btn");
+
+        function Register() {
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login() {
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = 0
+
+        }
+
+        </script>
+
+
+
+
+
+</html>
