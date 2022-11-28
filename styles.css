@@ -425,18 +425,10 @@ span{
 	transform: scale(1.1);
 }
 
-body{
-	display:  flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: #ffb6c1;
-
-}
 .accordion
 {
 	max-width:  1000px;
-
+        background: #ffb6c1;
 }
 
 .accordion .contentBx{
