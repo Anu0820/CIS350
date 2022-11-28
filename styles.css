@@ -425,6 +425,80 @@ span{
 	transform: scale(1.1);
 }
 
+body{
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #ffb6c1;
+
+}
+.accordion
+{
+	max-width:  1000px;
+
+}
+
+.accordion .contentBx{
+	position: relative;
+	margin:  10px 20px;
+
+}
+.accordion .contentBx .label{
+	position:  relative;
+	padding: 10px;
+	background:  #FF69B4;
+	color: #fff;
+	cursor:  pointer;
+}
+
+.accordion .contentBx .label::before
+{
+	content: '+';
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	font-size:  1.5em;
+
+}
+.accordion .contentBx.active .label::before
+{
+	content: '-';
+}
+.accordion .contentBx .content{
+	position: relative;
+	padding: 10px;
+	background: #fff;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	overflow-y: auto;
+	
+}
+.accordion .contentBx.active .content{
+	height: 300px;
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+    width: 77%;
+    margin: 10rem auto 0 auto;
+    justify-content: center;
+  
+
+} 
+.accordion .contentBx.active img{
+	height: 280px;	
+	border-radius: 40%;
+
+} 
+
+
+
+
+
+
+
 
 
 
